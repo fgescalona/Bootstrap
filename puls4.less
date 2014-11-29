@@ -1,0 +1,86 @@
+@grisOscuro : #444; 
+@grisClaro  : lighten(@grisOscuro, 40%);
+
+
+footer
+{
+	background      : @grisOscuro;
+	color           : white;
+	padding         : 1em;
+}
+
+header
+{
+	background      : @grisOscuro;
+	color           : white;
+	padding         : 1em;
+	h1
+	{
+		font-size   : 18px;
+		font-weight : normal;
+		padding     : 0;
+		margin      : 0; 
+	} 
+	.logo
+	{
+		img
+		{
+			border        : 1px dashed invert(@grisOscuro);
+			height        : 52px;
+			width         : 52px; 
+		}
+	}
+	.usuario
+	{
+		.avatar
+		{
+			border        : 1px dashed invert(@grisOscuro);
+			border-radius : 50%;
+			height        : 50px;
+			width         : 50px;   
+		}
+	}
+}
+
+section
+{
+	padding            : 1.2em;
+	article
+	{
+		border         : 1px solid @grisClaro;
+		border-radius  : 0 0 0.8em 0.8em; 
+		margin-bottom  : 1.2em; 
+		overflow       : hidden;
+
+
+		figure
+		{
+			background : @grisClaro;
+			height     : 160px;
+			width      : 120px; 
+		}
+		h2
+		{
+			color       : @grisOscuro;   
+			font-size   : 18px;
+			font-style  : italic;  
+			font-weight : bold; 
+			
+		}
+
+		.acciones
+		{
+			border-top  : 3px solid @grisClaro;
+			min-height  : 3em; 
+			padding     : 0.8em;  
+		}
+
+		.fecha
+		{
+			position    : relative;
+			right       : 20px;  
+		}
+	
+	}
+
+}
